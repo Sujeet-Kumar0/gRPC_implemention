@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+//option java_multiple_files = true;
+//option java_package = "com.example.grpcapplication";
+//option java_outer_classname = "CRUDProto";
+
+//package crud;
+
+service CRUDService {
+  rpc Create(CreateRequest) returns (CreateResponse);
+  rpc Read(ReadRequest) returns (ReadResponse);
+  rpc Update(UpdateRequest) returns (UpdateResponse);
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+}
+
+message CreateRequest {
+  string data = 1;
+}
+
+message CreateResponse {
+  int32 id = 1;
+}
+
+message ReadRequest {
+  int32 id = 1;
+}
+
+message ReadResponse {
+  string data = 1;
+}
+
+message UpdateRequest {
+  int32 id = 1;
+  string data = 2;
+}
+
+message UpdateResponse {}
+
+message DeleteRequest {
+  int32 id = 1;
+}
+
+message DeleteResponse {}

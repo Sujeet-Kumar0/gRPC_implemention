@@ -1,0 +1,48 @@
+[plugins]
+android-application = { id = "com.android.application", version = "8.2.2" }
+android-library = { id = "com.android.library", version = "8.2.0" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.9.21" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.0" }
+protobuf = { id = "com.google.protobuf", version = "0.9.4" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "12.0.3" }
+palantir-graal = { id = "com.palantir.graal", version = "0.12.0" }
+jib = { id = "com.google.cloud.tools.jib", version = "3.4.0" }
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.10.1" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.6.1" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.7.3" }
+grpc-protobuf = { group = "io.grpc", name = "grpc-protobuf", version = "1.60.0" }
+grpc-protobuf-lite = { group = "io.grpc", name = "grpc-protobuf-lite", version = "1.60.0" }
+grpc-netty = { group = "io.grpc", name = "grpc-netty", version = "1.60.0" }
+grpc-okhttp = { group = "io.grpc", name = "grpc-okhttp", version = "1.60.0" }
+grpc-testing = { group = "io.grpc", name = "grpc-testing", version = "1.60.0" }
+grpc-stub = { group = "io.grpc", name = "grpc-stub", version = "1.60.0" }
+grpc-kotlin-stub = { group = "io.grpc", name = "grpc-kotlin-stub", version = "1.4.1" }
+
+protoc = { group = "com.google.protobuf", name = "protoc", version = "3.25.1" }
+protobuf-kotlin = { group = "com.google.protobuf", name = "protobuf-kotlin", version = "3.25.1" }
+protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version = "3.25.1" }
+protobuf-java-util = { group = "com.google.protobuf", name = "protobuf-java-util", version = "3.25.1" }
+protoc-gen-grpc-java = { group = "io.grpc", name = "protoc-gen-grpc-java", version = "1.60.0" }
+protoc-gen-grpc-kotlin = { group = "io.grpc", name = "protoc-gen-grpc-kotlin", version = "1.4.1" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.8.2" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version = "1.5.4" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version = "1.5.4" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version = "1.5.4" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version = "1.5.4" }
+androidx-compose-compiler = { group = "androidx.compose.compiler", name = "compiler", version = "1.5.6" }
+
+kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version = "1.9.21" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+[versions]
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
